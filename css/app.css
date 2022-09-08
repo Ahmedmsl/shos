@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+}
+
+
+body{
+    background: linear-gradient(#111,#222);
+    height: 100vh;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+body::after{
+    content:'' ;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    clip-path: circle(35% at right 70%);
+}
+
+.hiro{
+    height: 80%;
+    width: 80%;
+    background:rgba(255, 255, 255, 0.1);
+    border-radius: 10%;
+    z-index: 1;
+    overflow: hidden;
+
+} 
+
+
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding:5% 0;
+}
+
+
+.hiro nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    list-style: none;
+}
+
+.hiro .logo{
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 13px;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: -45px;
+}
+.hiro .logo:hover{
+    background-color: black;
+
+}
+.hiro nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: red;
+    padding: 5px 20px;
+    border-radius:13px;
+    font-size: 1.1em;
+}
+
+.hiro nav ul li a:hover{
+background-color: black;
+} 
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:-60px ;    
+}
+
+
+section .text{
+    width: 50%;
+    color:white;
+    margin: auto;
+
+}
+
+section .text h2{
+font-size: 50px;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+
+section .text p{
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+
+section .img{
+    width: 40%;
+}
+
+
+section .img img{
+        width: 400px;
+}
+
+
